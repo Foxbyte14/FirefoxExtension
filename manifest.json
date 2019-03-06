@@ -1,17 +1,19 @@
 {
 
-  "description": "Adds a solid red border to all webpages matching mozilla.org. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#borderify",
   "manifest_version": 2,
-  "name": "Borderify",
+  "name": "pinkify",
   "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/borderify",
+
+  "description": "Adds a pink/red background to khanacademy.org",
+
   "icons": {
-  "48": "icons/border-48.png",
-  "96": "icons/border-96.png"
-}
+    "48": "icons/intell48.png"
+    "96": "icons/intell96.png"
+  },
+
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
+      "matches": ["*://*.khanacademy.org/*"],
       "js": ["borderify.js"]
     }
   ]
