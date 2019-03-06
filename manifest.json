@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.khanacademy.org/*"],
-      "js": ["borderify.js"]
+      "js": ["pinkify.js"]
     }
   ]
 
